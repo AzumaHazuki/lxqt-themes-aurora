@@ -1,0 +1,71 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#000000;
+	background:			#c7c7c7;
+
+	border:				1px solid #9d9d9d;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#000000;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#000000;
+	background:			#e7e7e7; /* This doesn't work for some reason... */
+	background-image:		url(assets/menus/bg.png); /* ...but this does! */
+
+	border:				1px solid #9d9d9d;
+}
+
+/* Button settings */
+QPushButton {
+        color:                          #000000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fbfbfb, stop:1 #d0d0d0);
+
+        border:                         4px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 4;
+
+        padding-left:                   20px;
+        padding-right:                  20px;
+        padding-top:                    2px;
+        padding-bottom:			2px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QToolButton {
+        color:                          #000000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fbfbfb, stop:1 #d0d0d0);
+
+        border:                         4px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 4;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    2px;
+        padding-bottom:			2px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QPushButton:hover, QToolButton:hover {
+	color:				#000000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e8eced, stop:1 #b8c1c8);
+
+        border-image:                   url(assets/buttons/hover.png) 4;
+}
+
+QPushButton:pressed, QToolButton:pressed {
+	color:				#000000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #aeaeae, stop:1 #9d9d9d);
+
+        border-image:                   url(assets/buttons/active.png) 4;
+}
