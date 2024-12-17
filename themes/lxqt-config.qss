@@ -1,0 +1,9 @@
+/* Configuration Center
+Theming by the base Qt widget style and palette */
+
+QToolTip {
+    color: #ffffff;
+    background: qlineargradient(x1:0, y1:0, x2:0.3, y2:0.05, stop:0 #9c8667, stop:1 #59420e);
+    border: 1px solid #45360b;
+    padding: 2px 0px;
+}
